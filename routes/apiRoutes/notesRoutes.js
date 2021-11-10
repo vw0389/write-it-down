@@ -1,9 +1,13 @@
 const {notes} = require('../../data/db.json');
+
 const router = require('express').Router();
+
 const {validateNote,createNote,deleteById,generateId} = require('../../lib/note');
+
 router.get('/notes', (req,res) =>  {
     res.json(notes)
 });
+
 router.post('/notes', (req,res) =>  { 
     // add id to body
     req.body.id = generateId();
@@ -17,6 +21,7 @@ router.post('/notes', (req,res) =>  {
         res.json(note);
     }
 });
+
 router.delete('/notes/:id', (req,res) => {
 
     let id = parseInt(req.params.id);
@@ -28,4 +33,5 @@ router.delete('/notes/:id', (req,res) => {
         res.status(200).send("ok");
     }
 });
+
 module.exports = router;
