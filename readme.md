@@ -42,4 +42,4 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Links
 
-live @ https://obscure-badlands-61476.herokuapp.com/notes
+live @ https://obscure-badlands-61476.herokuapp.com/
