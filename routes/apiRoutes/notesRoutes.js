@@ -19,9 +19,9 @@ router.post('/notes', (req,res) =>  {
 });
 router.delete('/notes/:id', (req,res) => {
 
-    let id = req.params.id;
+    let id = parseInt(req.params.id);
     
-    if (id < 0 || typeof id !== 'number') {
+    if (isNaN(id) || id < 0 || id > 10000000000) {
         res.status(400).send("request not properly formatted");
     } else {
         deleteById(id,notes);
