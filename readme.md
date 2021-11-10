@@ -2,6 +2,8 @@
 
 Basic note taking app to keep track of tasks and ideas for later reference
 
+![image](./screenshot.png)
+
 ## User Story
 
 AS A small business owner
@@ -38,3 +40,6 @@ WHEN I click on the Write icon in the navigation at the top of the page
 
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
+## Links
+
+live @ https://obscure-badlands-61476.herokuapp.com/notes
